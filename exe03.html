@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de Botões</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        /* Botão com cor sólida */
+        .botao-solido {
+            background-color: #3498db; /* Azul */
+            color: #fff;
+        }
+
+        .botao-solido:hover {
+            background-color: #2980b9; /* Azul mais escuro no hover */
+        }
+
+        .botao-solido:focus {
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.7); /* Sombra azul no foco */
+        }
+
+        /* Botão com gradiente */
+        .botao-gradiente {
+            background: linear-gradient(to right, #e74c3c, #3498db); /* Gradiente de vermelho para azul */
+            color: #fff;
+        }
+
+        .botao-gradiente:hover {
+            background: linear-gradient(to right, #c0392b, #2980b9); /* Gradiente mais escuro no hover */
+        }
+
+        .botao-gradiente:focus {
+            box-shadow: 0 0 5px rgba(231, 76, 60, 0.7); /* Sombra vermelha no foco */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="botao-solido">Botão Sólido</button>
+    <button class="botao-gradiente">Botão com Gradiente</button>
+
+</body>
+</html>
